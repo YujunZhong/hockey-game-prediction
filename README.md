@@ -1,6 +1,8 @@
 # Hockey Game Prediction
 This repository includes three parts for hockey game prediction: model deployment, live workflows and interactive visualization. **The training code for the models and the visualization of the NHL data are in other branches**.
 
+The project originally came from the Data Science class at the University of Montreal, and the work was done by *Yujun Zhong, Tejas Shivakumar Kasetty and Kasra Laamerad*.
+
 
 ## Setup & Deployment Guide
 
