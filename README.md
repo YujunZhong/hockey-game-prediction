@@ -1,4 +1,6 @@
 # Hockey Game Prediction
-This repository includes code for feature engineering, feature selection, and statistical modeling for hockey game prediction. Multiple classifiers ranging from logistic regression, XGBoost, and random forest trees were trained to predict whether a shot could become a goal.
+This repository includes analysis and visualization of NHL game data. Sample code to run all modules is included in NHL.ipynb.
 
-Sample code to run all modules is included in NHL.ipynb.
+### NHL Analytics
+- [Data Processing](./ift6758/data)
+- [Visualizations](./ift6758/visualizations)
