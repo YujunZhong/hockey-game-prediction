@@ -1,5 +1,5 @@
-# IFT 6758 Project - Team 9
-This repository covers all the work done by team 9 in the IFT 6758 project, where "codebase" folder holds all the code, and the "blog" folder contains our blog posts.
+# Hockey Game Prediction
+This repository includes three parts for hockey game prediction: model deployment, live workflows and interactive visualization. The training code for the models and the visualization of the NHL data are in other branches.
 
 
 ## Setup & Deployment Guide
