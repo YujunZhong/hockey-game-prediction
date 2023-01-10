@@ -162,7 +162,7 @@ event_types = {'SHOT': 0, 'GOAL': 1, 'BLOCKED_SHOT': 2,
 shot_types = {'Backhand': 1, 'Deflected': 2, 
             'Slap Shot': 3, 'Snap Shot': 4, 
             'Tip-In': 5, 'Wrap-around': 6, 
-            'Wrist Shot': 7, 'Batted': 8, 'Poke': 9}
+            'Wrist Shot': 7}
 
 feature_list = ['game_seconds', 'period', 'coord_x', 'coord_y', 
             'shot_distance', 'shot_angle', 'shot_type', 

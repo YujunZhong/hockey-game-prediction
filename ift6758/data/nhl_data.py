@@ -115,7 +115,7 @@ class NHL:
         if end_year == None:
             end_year = start_year
         self.target_years = list(range(start_year, end_year+1))
-        if path and not os.path.isdir(path):
+        if not os.path.isdir(path):
             raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), path)
         self.save_path = path
         self.data = []
@@ -144,11 +144,6 @@ class NHL:
 
         return pd.concat(dfs, ignore_index = True)
                 
-    def game_to_DataFrame(self, gameId, event_types):
-        df = Transformer.convert_to_dataframe([self.rest.get_game_feed(gameId)], 
-            event_types)
-        return df
-        
     def get_data(self, reload = False, game_types = list(GAME_TYPE.keys())):
         if reload or not self.is_loaded:
             del self.data[:]
@@ -312,9 +307,7 @@ class Transformer:
         common = cls.__process_game_info(info)
         #print(PROCESS_GAME_INFO.format(game_id = common[1]))
 
-        #if info['status']['statusCode'] != REQUIRED_GAME_STATE or  LIVE_DATA not in game:
-        #    return None
-        if LIVE_DATA not in game:
+        if info['status']['statusCode'] != REQUIRED_GAME_STATE or  LIVE_DATA not in game:
             return None
 
         plays, linescore = game[LIVE_DATA][PLAYS], game[LIVE_DATA][LINE_SCORE]

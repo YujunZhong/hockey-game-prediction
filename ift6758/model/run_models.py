@@ -71,7 +71,7 @@ def process_feats(df):
     df['empty_net'].replace(bool_to_int, inplace=True)
     df['empty_net'] = pd.to_numeric(df['empty_net'])
 
-    feat_list = ['game_seconds', 'period', 'team', 'coord_x', 'coord_y', 'shot_distance', 'shot_angle', 'shot_type', 'prev_event_type', 'prev_coord_x', 'prev_coord_y', 
+    feat_list = ['game_seconds', 'period', 'coord_x', 'coord_y', 'shot_distance', 'shot_angle', 'shot_type', 'prev_event_type', 'prev_coord_x', 'prev_coord_y', 
             'time_from_prev_event', 'distance_from_prev_event', 'rebound', 'change_in_angle', 'speed', 'empty_net', 'is_home', 'is_forward', 'is_shortHanded', 'event_type']
     for f in feat_list:
         df[f] = df[f].fillna(0)

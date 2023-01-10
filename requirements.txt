@@ -10,14 +10,7 @@ plotly
 ipywidgets
 ipykernel
 jupyterlab>=3.0.0
-ipdb
 setuptools
-scikit-learn
-sklearn_evaluation
+sklearn
 xgboost
 comet_ml
-shap
-catboost
-category_encoders
-imblearn
-mlxtend

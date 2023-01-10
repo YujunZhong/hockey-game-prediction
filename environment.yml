@@ -20,7 +20,4 @@ dependencies:
   - scikit-learn
   - sklearn_evaluation
   - xgboost
-  - comet_ml
   - shap
-  - flask
-  - waitress
