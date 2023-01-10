@@ -1,5 +1,5 @@
 # Hockey Game Prediction
-This repository includes three parts for hockey game prediction: model deployment, live workflows and interactive visualization. The training code for the models and the visualization of the NHL data are in other branches.
+This repository includes three parts for hockey game prediction: model deployment, live workflows and interactive visualization. **The training code for the models and the visualization of the NHL data are in other branches**.
 
 
 ## Setup & Deployment Guide
