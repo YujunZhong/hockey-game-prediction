@@ -1,0 +1,17 @@
+FROM python:3.7 as streamlit
+
+WORKDIR /code
+RUN pip install streamlit
+ADD ./codebase/ift6758 ./codebase/setup.py ./
+ADD ./codebase/streamlit/streamlit_app.py ./
+
+RUN pip install -e .
+
+ARG PORT=80
+ENV PORT_NUMBER=$PORT
+
+EXPOSE ${PORT_NUMBER}
+CMD streamlit run streamlit_app.py --server.port ${PORT_NUMBER} --server.address 127.0.0.1
+
+
+# TODO: add code, optionally a default model if you want 

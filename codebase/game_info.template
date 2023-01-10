@@ -1,0 +1,11 @@
+<p>
+Start Time: <b>{start_time} </b> <br>
+Game Id: <b>{game_id}</b> &nbsp Game Type: <b> {game_type} </b> </br>
+Game: <b> {home} vs {away} </b> &nbsp  Season: <b>{season_year} </b>
+</p>
+<table style = "text-align: center">
+    <tr> <th></th> <th> Home </th> <th> Away </th> </tr>
+    <tr> <th>Teams</th> <td> {home} </td> <td> {away} </td></tr>
+    <tr> <th>Goals</th> <td> {home_goals} </td> <td> {away_goals} </td> </tr>
+    <tr> <th>SOG</th> <td> {home_sog} </td> <td> {away_sog} </td> </tr>
+</table>
